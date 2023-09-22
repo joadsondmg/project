@@ -2,7 +2,7 @@ header {
     margin:5rem 0 2rem 2rem !important;
 }
 
-#navigation {
+#navigation-history {
     list-style-type: none;
     display: flex;
     gap: 0.5rem;
@@ -12,3 +12,7 @@ header {
     text-decoration: underline;
 }
 
+#main-container {
+    width: 100%;
+    background-color: red;
+}
