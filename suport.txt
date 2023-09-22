@@ -1,0 +1,135 @@
+    <!-- Second Content -->
+      <div class="second-content">
+        <div class="action-menu ger-menu">
+        <div class="dropdown">
+        <button class="selected btn-select btn-ger" onclick="toggleDropdown()">Gerência 1</button>
+        <div class="dropdown-content" id="dropdownOptions">
+            <button onclick="selectGerencia(1)">Gerência 1</button>
+            <button onclick="selectGerencia(2)">Gerência 2</button>
+            <button onclick="selectGerencia(3)">Gerência 3</button>
+            <button onclick="selectGerencia(4)">Gerência 4</button>
+        </div>
+        </div>
+      </div>
+        <!-- Graph Section-->
+        <div class="graph-content">
+          <div class="graph-control-panel">
+          <button class="selected btn-select" onclick="updateChart(0)">OC Total</button>
+          <button class="btn-select" onclick="updateChart(1)">OC Total Crítica</button>
+          <button class="btn-select" onclick="updateChart(2)">Neut x Ñ Neut</button>
+          </div>
+          <canvas id="myChart"></canvas>
+        </div>
+        <!-- End of Graph Section-->
+      </div>
+    <!-- Second Content -->
+
+
+
+/* CSS 
+    .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.dropdown-content button:hover {
+    background-color: #ddd;
+}
+
+*/
+
+
+/*  JAVSCRIPT 
+var ctx = document.getElementById('myChart').getContext('2d');
+
+    // Define os dados para os três gráficos
+    var chartData = [
+      {
+        labels: ['Categoria 1', 'Categoria 2', 'Categoria 3'],
+        datasets: [{
+          label: 'OC Total  |  Logística Norte',
+          data: [10, 20, 15],
+          backgroundColor: ['rgba(236,177,31)'],
+          borderColor: ['rgba(255, 99, 132, 1)', 'rgba(54, 162, 235, 1)', 'rgba(255, 206, 86, 1)'],
+          borderWidth: 1
+        }]
+      },
+      {
+        labels: ['Categoria A', 'Categoria B', 'Categoria C'],
+        datasets: [{
+          label: 'OC Total Crítica  |  Logística Norte',
+          data: [5, 15, 25],
+          backgroundColor: ['rgba(236,177,31)'],
+          borderColor: ['rgba(255, 99, 132, 1)', 'rgba(54, 162, 235, 1)', 'rgba(255, 206, 86, 1)'],
+          borderWidth: 1
+        }]
+      },
+      {
+        labels: ['Categoria X', 'Categoria Y', 'Categoria Z'],
+        datasets: [{
+          label: 'Neutralizado X Não Neutralizado  |  Logística Norte',
+          data: [8, 18, 12],
+          backgroundColor: ['rgba(236,177,31)'],
+          borderColor: ['rgba(255, 99, 132, 1)', 'rgba(54, 162, 235, 1)', 'rgba(255, 206, 86, 1)'],
+          borderWidth: 1
+        }]
+      }
+    ];
+
+    var options = {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    };
+
+    var currentChart = null;
+
+    function updateChart(index) {
+      if (currentChart) {
+        currentChart.destroy(); // Destroi o gráfico atual
+      }
+
+      currentChart = new Chart(ctx, {
+        type: 'bar',
+        data: chartData[index],
+        options: options
+      });
+    }
+
+    function toggleDropdown() {
+      var dropdown = document.getElementById('dropdownOptions');
+      dropdown.style.display = (dropdown.style.display === 'block') ? 'none' : 'block';
+  }
+
+  // Função para selecionar uma gerência
+  function selectGerencia(gerencia) {
+      toggleDropdown(); 
+      
+      document.querySelector('.selected.btn-select').innerText = 'Gerência ' + gerencia;
+      updateChart(0); // Atualiza o gráfico com os novos dados (dados da Gerência 1 por padrão)
+  }
+    // Inicialmente, exibe o primeiro gráfico
+    updateChart(0);
+
+    */ 

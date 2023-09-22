@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main-style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>DSI</title>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html">
+      <img src="assets/logo_vale.png" alt="Logo da Vale" class="logo">
+    </a>
+
+    <div class="options-content">
+      <a href="#">Modulos</a>
+      <a href="#">Configurações</a>
+    </div>
+
+    <div class="user-actions" >
+      <img src="assets/divider.png" class="divider" alt="">
+      
+      <div class="user-content">
+      <img src="assets/user-icon.png" alt="">
+      <span>00000000@vale.com</span>
+      <img src="assets/dropdown_icon.png" class="dropdown_icon" alt="">
+      <!-- Dropdown Menu -->
+      </div>
+    </div>
+  </nav>
+  <!-- End of Navbar-->
+
+  <!-- Header Content -->
+  <header>
+    <div class="introduction-text"><span>
+        Olá, {Nome}. Por onde você quer começar?
+      </span>
+    </div>
+  </header>
+  <!-- End Header Content -->
+
+  <!-- Main Content -->
+  <section class="main-container" >
+
+    <!-- First Content -->
+    <div class="first-content">
+      <!-- First Action Menu Content -->
+      <div class="action-menu">
+        <a href="#">
+          <div class="btn">
+            <img src="assets/avu_icon.png" alt="" class="option-img">
+            <span class="option-text">AVU's</span>
+          </div>
+        </a>
+        <a href="#">
+          <div class="btn">
+            <img src="assets/ocorrencias_icon.png" alt="" class="option-img">
+            <span class="option-text">Ocorrências</span>
+          </div>
+        </a>
+        <a href="#">
+          <div class="btn">
+            <img src="assets/task_icon.png" alt="" class="option-img">
+            <span class="option-text">Rotina
+            </span>
+          </div>
+        </a>
+        <a href="business.html">
+          <div class="btn">
+            <img src="assets/task_icon.png" alt="" class="option-img">
+            <span class="option-text">Business Intelligence
+            </span>
+          </div>
+        </a>
+      </div>
+      <!-- End of First Action Menu Content -->
+
+    <!-- Ocorrencias Section-->
+      <div class="table-container">
+          <div class="table-control">
+            <div class="table-selection">
+              <div class="buttons">
+                <button class="btn-select btn-ocorrencia selected ">Ocorrências</button>
+                <button class="btn-select btn-ocorrencia">Ocorrências Sociais</button>
+              </div>
+            </div>
+            <img class="divider-horz" src="assets/divider-horz.png" alt="">
+            
+            <div class="form-caller">
+              <div class="info-formcaller">
+              <img src="" alt="">
+              <span>Ocorrências graves registradas</span>
+              </div>
+              <div class="add-container">
+              <img src="assets/add-icon.png.jpg" alt="">
+              <div class="msgbox">+Adicionar Ocorrência</div>
+              </div>
+            </div>
+
+            <img class="divider-horz" src="assets/divider-horz.png" alt="">
+
+            <div class="table-ocorrencias">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Identificador</th>
+                      <th>Gerência</th>
+                      <th>Tipificação</th>
+                      <th>Data</th>
+                      <th>Hora</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>INC0000000000</td>
+                      <td>GER</td>
+                      <td>INTRUSÃO</td>
+                      <td>01/01/1999</td>
+                      <td>00:00</td>
+                    </tr>
+                    <tr>
+                      <td>INC0000000000</td>
+                      <td>GER</td>
+                      <td>INTRUSÃO</td>
+                      <td>01/01/1999</td>
+                      <td>00:00</td>
+                    </tr>
+                    <tr>
+                      <td>INC0000000000</td>
+                      <td>GER</td>
+                      <td>INTRUSÃO</td>
+                      <td>01/01/1999</td>
+                      <td>00:00</td>
+                    </tr>
+                    <tr>
+                      <td>INC0000000000</td>
+                      <td>GER</td>
+                      <td>INTRUSÃO</td>
+                      <td>01/01/1999</td>
+                      <td>00:00</td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+            <img class="divider-horz-var" src="assets/divider-horz.png" alt="">
+                <div class="table-control-panel">
+                  <span class="amount-info">004</span>
+                  <div class="controller">
+                    <ul>
+                      <li><img src="assets/skip-prev-icon.png" alt=""></li>
+                      <li><img src="assets/prev-icon.png" alt=""></li>
+                      <li>1</li>
+                      <li>2</li>
+                      <li>3</li>
+                      <li>4</li>
+                      <li>5</li>
+                      <li><img src="assets/next-icon.png" alt=""></li>
+                      <li><img src="assets/skip-next-icon.png" alt=""></li>
+                    </ul>
+                  </div>
+                </div>
+          </div> 
+      </div>
+    <!-- End of Ocorrencias Section--> 
+    </div>
+    <!-- End of First Content -->
+
+  </section>
+  <!-- End Main Content -->
+
+<script src="index.js" ></script>
+<script src="Base_Dados.js" ></script>
+</body>
+</html>

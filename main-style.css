@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap');
+
+:root {
+
+--primary_green: #007E7A;
+--secondary_grey: #747678;
+--secondary_yellow: #ECB11F;
+--aux_orange: #E37222;
+--aux_red: #BB133E;
+--aux_violet: #3D7EDB;
+--aux_blue: #00B0CA;
+--aux_lightgreen: #69BE28;
+--aux_acidgreen: #DFDF00;
+
+--menu_base: 35rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    color: var(--secondary_grey);
+    text-decoration: none;
+}
+
+
+
+.navbar, .user-actions, .user-content, .action-control-panel, .btn, .table-control, .form-caller, .table-control-panel {
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px -1px rgb(0, 0, 0, .7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    padding: 0.5rem;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 6rem;
+    margin-left: 3rem;
+}
+
+.options-content a {
+    margin-right: 1rem;
+    text-decoration: none;
+}
+
+
+.options-content a:hover {
+    /* Verificar */
+    text-transform: 20px;
+}
+
+.divider {
+    width: 1.5rem;
+    margin-right: 0.7rem;
+}
+
+.user-actions{
+    justify-content: flex-end;
+    line-height: 2rem;
+}
+/*
+.user-content {
+     Options 
+}
+*/
+.user-content > img:first-child {
+    width: 1.3rem;
+    margin: 0.7rem;
+}
+
+.user-content span{
+    font-size: 0.8rem;
+}
+
+.dropdown_icon {
+    opacity: 0.5;
+    width: 0.8rem;
+    margin: 0.7rem;
+
+}
+
+header {
+    margin:6rem 0 2rem 2rem;
+}
+
+.introduction-text {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-left: 1.2rem;
+}
+
+
+
+.btn {
+    background-color: var(--primary_green);
+    border-radius: 0.7rem;
+    transition: transform 0.3s ease;
+    box-shadow: 1px 1px 3px -0.5px rgb(0, 0, 0, .7);
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.option-img{
+    width: 4rem;
+    margin-left: 0.7rem;
+}
+
+.option-text {
+    color: rgb(255, 255, 255); 
+    margin-right: 0.7rem;
+}
+
+.main-container {
+    width: 100%;
+}
+
+.first-content {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 100%;
+
+}
+
+
+.action-menu {
+    display: flex;
+    flex-direction: column;
+    width: var(--menu_base);
+    justify-content: center;
+    width: 13rem;
+    gap: 2rem;
+}
+
+.graph-content {
+    padding: 0 0 0 7rem;  
+}
+
+#myChart {
+    margin-top: 1rem;
+    
+}
+
+#myChart > span {
+    font-size: 3rem;
+}
+
+.graph-control-panel {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 4rem;
+}
+
+.btn-select {
+    transition: transform 0.2s, box-shadow 0.2s;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.4rem;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    padding: 1rem 1.3rem;
+    margin: 0 0.6rem 0.6rem 0; 
+}
+
+.graph-control-panel button {
+    padding: 1rem;
+}
+
+.graph-control-panel button:hover {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+}
+
+.table-container {
+    
+}
+
+.table-control {
+    flex-direction: column;
+}
+
+.selected {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: #f1ebeb !important;
+}
+
+.divider-horz {
+    width: 100%;
+    height: 0.5rem;
+}
+
+.divider-horz-var {
+    width: 100%;
+    height: 0.5rem;
+    margin-top: 2rem;
+}
+
+.table-selection {
+    display: grid;
+    place-items: center;
+    width: 100%;
+}
+
+.buttons {
+    display: flex;
+}
+
+.buttons button:hover {
+    
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.form-caller {
+    width: 95%;
+    justify-content: space-between;
+    margin: 1rem 0 1rem 0;
+    
+}
+
+.add-container  img {
+    width: 1.5rem;
+    cursor: pointer;
+    padding: 0.2rem;
+    position: relative;
+    display: inline-block;
+    transition: transform 0.1s ease;
+}
+
+.add-container img:hover {
+    transform: scale(1.2);
+}
+
+.msgbox {
+    display: none;
+    position: relative;
+    top: 0;
+    left:-100px;
+    border-radius: 0.2rem;
+    width: 13rem;
+    height: 1.8rem;
+    text-align: center;
+    box-shadow: 1px 1px 3px -0.5px rgb(0, 0, 0, .7);
+}
+
+.info-formcaller > span {
+    color: var(--primary_green);
+    font-size: 1rem;
+}
+
+.table-ocorrencias {
+    margin-top: 1rem;
+    width: 85%;
+}
+
+table {
+    width: 100%;
+    text-align: left;
+    border: none;
+    border-collapse: collapse;
+}
+
+table th,td {
+    padding: 0.7rem;
+    margin: 0;
+}
+
+th {
+    color:#000000;
+    font-weight: 400;
+    
+}
+
+tbody tr:hover {
+    background-color:rgb(232, 232, 232) ;
+}
+
+.controller img {
+    width: 0.7rem;
+    opacity: 0.5;
+}
+
+.controller ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 0.9rem;
+}
+
+.controller li {
+    cursor:pointer;
+    transition: transform 0.1s ease;
+}
+
+.controller li:hover {
+    transform: scale(1.2);
+
+}
+
+.table-control-panel {
+    width: 95%;
+   justify-content: space-between;
+   padding: 0.3rem;
+}

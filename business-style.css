@@ -1,0 +1,14 @@
+header {
+    margin:5rem 0 2rem 2rem !important;
+}
+
+#navigation {
+    list-style-type: none;
+    display: flex;
+    gap: 0.5rem;
+}
+
+#navigation li:first-child:hover {
+    text-decoration: underline;
+}
+
