@@ -2,6 +2,7 @@
 
 :root {
 
+/* Cores Base */
 --primary_green: #007E7A;
 --secondary_grey: #747678;
 --secondary_yellow: #ECB11F;
@@ -12,7 +13,13 @@
 --aux_lightgreen: #69BE28;
 --aux_acidgreen: #DFDF00;
 
---menu_base: 35rem;
+/* Variaveis de Dimensão */
+--primary-button-width: 15rem;
+--primary-button-height: 4rem;
+
+--table-button-width: 9.5rem;
+--table-button-height: 2.8rem;
+
 }
 
 * {
@@ -104,6 +111,8 @@ header {
     border-radius: 0.7rem;
     transition: transform 0.3s ease;
     box-shadow: 1px 1px 3px -0.5px rgb(0, 0, 0, .7);
+    width: var(--primary-button-width);
+    height: var(--primary-button-height);
 }
 
 .btn:hover {
@@ -127,7 +136,7 @@ header {
 
 .first-content {
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 30% 70%;
     grid-template-rows: 100%;
 
 }
@@ -136,10 +145,12 @@ header {
 .action-menu {
     display: flex;
     flex-direction: column;
-    width: var(--menu_base);
     justify-content: center;
-    width: 13rem;
+    align-items: center;
+    width: 100%;
+    height: 100%;
     gap: 2rem;
+    
 }
 
 .graph-content {
@@ -171,9 +182,12 @@ header {
     border-radius: 0.4rem;
     text-transform: uppercase;
     font-size: 0.7rem;
-    padding: 1rem 1.3rem;
-    margin: 0 0.6rem 0.6rem 0; 
+    width: var(--table-button-width);
+    height: var(--table-button-height);
+    margin: 0 1rem 0.5rem 0;
 }
+
+
 
 .graph-control-panel button {
     padding: 1rem;
@@ -184,9 +198,15 @@ header {
     padding: 1rem;
 }
 
-/* .table-container {
-    
-}*/
+ .table-container {
+ width: 90%;
+ height: 90%;
+}
+
+.second-content {
+    width: 100%;
+    height: 100%;
+}
 
 .table-control {
     flex-direction: column;
@@ -205,7 +225,7 @@ header {
 .divider-horz-var {
     width: 100%;
     height: 0.5rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .table-selection {
@@ -273,14 +293,13 @@ table {
 }
 
 table th,td {
-    padding: 0.7rem;
+    padding: 0.6rem;
     margin: 0;
 }
 
 th {
     color:#000000;
     font-weight: 400;
-    
 }
 
 tbody tr:hover {
