@@ -1,0 +1,63 @@
+:root {
+
+    /* Cores Base */
+    --primary_green: #007E7A;
+    --secondary_grey: #747678;
+    --secondary_yellow: #ECB11F;
+    --aux_orange: #E37222;
+    --aux_red: #BB133E;
+    --aux_violet: #3D7EDB;
+    --aux_blue: #00B0CA;
+    --aux_lightgreen: #69BE28;
+    --aux_acidgreen: #DFDF00;
+
+}
+
+#prev-menu {
+    display: flex;
+    margin-top: -1rem;
+    gap: 0.3rem;
+}
+
+#prev-menu span {
+    transition: transform 0.1s ease;
+}
+
+#prev-menu span:hover {
+    transform: scale(1.1);
+}
+
+#main-container {
+    width: 100%;
+    height: 28rem;
+    display: grid;
+    place-items: center;
+}
+
+#option-panel {
+    width: 22rem;
+    height: 15rem;
+    margin: -6rem 0 0 -8rem ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem
+}
+
+.btn-panel-selection {
+    border:2px solid var(--primary_green);
+    color: var(--primary_green);
+    border-radius: 1rem;
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    cursor: pointer;
+}
+
+span + img {
+    width: 2rem;
+}
+
